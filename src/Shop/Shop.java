@@ -1,5 +1,7 @@
 package Shop;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Shop {
@@ -17,7 +19,9 @@ public class Shop {
     // Метод должен вернуть отсортированный по возрастанию по цене список продуктов
     public List<Product> sortProductsByPrice() {
         // Допишите реализацию метода самостоятельно
-        return null;
+       List<Product> temp =  products;
+       Collections.sort(temp);
+        return temp;
     }
 
     // Метод должен вернуть самый дорогой продукт
@@ -25,4 +29,5 @@ public class Shop {
         // Допишите реализацию метода самостоятельно
         return null;
     }
+
 }
