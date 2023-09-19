@@ -1,6 +1,8 @@
 package Shop;
 
-public class Product {
+import java.util.Comparator;
+
+public class Product implements Comparable<Product>{
     private Integer cost; // Стоимость продукта
     private String title; // Название
 
@@ -20,4 +22,10 @@ public class Product {
     public void setTitle(String title) {
         this.title = title;
     }
+
+    @Override
+    public int compareTo(Product p) {
+        return this.cost.compareTo(p.cost);
+    }
 }
+
