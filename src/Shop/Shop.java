@@ -27,7 +27,7 @@ public class Shop {
     // Метод должен вернуть самый дорогой продукт
     public Product getMostExpensiveProduct() {
         // Допишите реализацию метода самостоятельно
-        return null;
+        return Collections.max(products);
     }
 
 }
