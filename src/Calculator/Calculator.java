@@ -26,4 +26,14 @@ public class Calculator {
         }
         return result;
     }
+    public static double calculatingDiscount(double purchaseAmount, int discountAmount) {
+        // purchaseAmount - сумма покупки
+        // discountAmount - размер скидки
+        if (purchaseAmount > 0 && (discountAmount >= 0 && discountAmount <= 100)){
+            return purchaseAmount / 100 * (100 - discountAmount); // Метод должен возвращать сумму покупки со скидкой
+        } else {
+            throw new ArithmeticException("Exorbitant values");
+        }
+
+    }
 }
