@@ -1,5 +1,6 @@
 package Shop;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -19,8 +20,8 @@ public class Shop {
     // Метод должен вернуть отсортированный по возрастанию по цене список продуктов
     public List<Product> sortProductsByPrice() {
         // Допишите реализацию метода самостоятельно
-       List<Product> temp =  products;
-       Collections.sort(temp);
+        List<Product> temp = new ArrayList<>(products);
+        Collections.sort(temp);
         return temp;
     }
 
@@ -29,5 +30,4 @@ public class Shop {
         // Допишите реализацию метода самостоятельно
         return Collections.max(products);
     }
-
 }
