@@ -1,6 +1,4 @@
-package Shop;
-
-import java.util.Comparator;
+package firstSeminar.Shop;
 
 public class Product implements Comparable<Product>{
     private Integer cost; // Стоимость продукта
