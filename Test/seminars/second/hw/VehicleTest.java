@@ -44,12 +44,24 @@ class VehicleTest {
     }
 
     /**
-     * Проверить, что объект Car развивает скорость 60 в режиме тестового вождения (используя метод testDrive()).
+     * Проверить, что объект Car развивает скорость 60 в режиме тестового
+     * вождения (используя метод testDrive()).
      */
     @Test
     void carSpeed60testDrive() {
         car.testDrive();
 
         assertEquals(car.getSpeed(), 60);
+    }
+
+    /**
+     * Проверить, что объект Motorcycle развивает скорость 75 в режиме
+     * тестового вождения (используя метод testDrive()).
+     */
+    @Test
+    void motorcycleSpeed75testDrive() {
+        motorcycle.testDrive();
+
+        assertEquals(motorcycle.getSpeed(), 75);
     }
 }
