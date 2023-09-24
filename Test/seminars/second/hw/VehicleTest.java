@@ -27,5 +27,11 @@ class VehicleTest {
 
     }
 
-
+    /**
+     * Проверить, что объект Car создается с 4-мя колесами.
+     */
+    @Test
+    void carHas4wheels() {
+        assertEquals(car.getNumWheels(), 4);
+    }
 }
