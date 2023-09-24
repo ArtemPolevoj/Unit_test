@@ -1,11 +1,14 @@
 package secondSeminar.life_cycle_JUnit5;
 
 import org.junit.jupiter.api.*;
+import secondSeminar.hw.Car;
 
 public class TestLC {
     @BeforeAll
     static void setup() {
         System.out.println("@BeforeAll");
+        Car car = new Car("testCar","testMadel", 2);
+
     }
 
     @BeforeEach
