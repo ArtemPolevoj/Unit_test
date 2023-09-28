@@ -179,7 +179,12 @@ class ShopTest {
 
     @Test
     void testSUM() {
+                  Shop shop = new Shop(getStoreItems());
+                  Cart cart = new Cart(shop);
+                  cart.addProductToCartByID(2); // 250
+                  cart.addProductToCartByID(2); // 250
 
+                  assertThat(cart.getTotalPrice()).isEqualTo(500);
     }
 
     /**
