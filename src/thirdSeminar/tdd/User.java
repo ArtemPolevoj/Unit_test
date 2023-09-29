@@ -17,7 +17,12 @@ public class User {
 
     //3.6.
     public boolean authenticate(String name, String password) {
-        return false;
+        if (!name.equals(this.name)) {
+            return false;
+        } else if (!password.equals(this.password)) {
+            return false;
+        } else {
+            return true;
+        }
     }
-
 }
