@@ -31,6 +31,23 @@ class MainHWTest {
     }
 
     @Test
-    void numberInInterval() {
+    void interval24False() {
+        assertFalse(mainHW.numberInInterval(24));
+    }
+    @Test
+    void interval101False() {
+        assertFalse(mainHW.numberInInterval(101));
+    }
+    @Test
+    void interval25True() {
+        assertTrue(mainHW.numberInInterval(25));
+    }
+    @Test
+    void interval100True() {
+        assertTrue(mainHW.numberInInterval(100));
+    }
+    @Test
+    void interval50True() {
+        assertTrue(mainHW.numberInInterval(50));
     }
 }
