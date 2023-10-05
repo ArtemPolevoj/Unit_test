@@ -1,6 +1,6 @@
 package fourth.hotel;
 
-import seminars.fourth.hotel.HotelService;
+
 
 public class BookingService {
     private HotelService hotelService;
