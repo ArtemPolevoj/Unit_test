@@ -18,7 +18,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class SeleniumTest {
     @Test
     void checkAuthorization() {
-        boolean testOk = false;
         WebDriver driver = new EdgeDriver();
         driver.get("https://www.saucedemo.com/");
         WebElement login = driver.findElement(By.id("user-name"));
@@ -26,11 +25,9 @@ public class SeleniumTest {
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("secret_sauce");
         password.submit();
-        WebElement product = driver.findElement(By.className("header_secondary_container"));
-        if (product.getText().contains("Products")) {
-            testOk = true;
-        }
-        assertTrue(testOk);
-    }
+        WebElement product = driver.findElement
+                (By.className("header_secondary_container"));
 
+        assertTrue(product.getText().contains("Products"));
+    }
 }
