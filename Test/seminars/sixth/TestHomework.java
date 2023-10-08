@@ -30,8 +30,9 @@ public class TestHomework {
                 .mapToDouble(val -> val)
                 .average()
                 .orElse(0.0);
+        double test = homework.getAverage(temp);
 
-        assertEquals(homework.getAverage(temp), average);
+        assertEquals(test, average);
     }
 
     @Test
